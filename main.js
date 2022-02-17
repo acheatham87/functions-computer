@@ -21,6 +21,9 @@ const compHTMLMaker = (compObject) => {
     return compHTMLSection
 }
 
-stringReturnedFromFunction = compHTMLMaker(computer)
-console.log(stringReturnedFromFunction)
+const stringReturnedFromFunction = compHTMLMaker(computer)
 
+// console.log(stringReturnedFromFunction)
+
+const container = document.querySelector("#myDiv")
+container.innerHTML = stringReturnedFromFunction
